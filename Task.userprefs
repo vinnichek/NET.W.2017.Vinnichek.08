@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{52CBB514-0A8D-42D9-99D4-60FC0865D591}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp/Books.txt">
+    <Files>
+      <File FileName="Book.Logic/MyClass.cs" Line="10" Column="2" />
+      <File FileName="Book.Logic/Book.cs" Line="14" Column="40" />
+      <File FileName="Book.Logic/BookListService.cs" Line="17" Column="1" />
+      <File FileName="Book.Logic/ComparerMethods.cs" Line="17" Column="23" />
+      <File FileName="Book.Logic/FinderMethods.cs" Line="1" Column="1" />
+      <File FileName="Book.Logic/IFinder.cs" Line="3" Column="1" />
+      <File FileName="Book.Logic/BookStorage/BookBinaryStorage.cs" Line="74" Column="32" />
+      <File FileName="Book.Logic/BookStorage/IBookStorage.cs" Line="6" Column="34" />
+      <File FileName="Book.Logic/BookStorage/BookBinaryStorage.cs" Line="1" Column="1" />
+      <File FileName="ConsoleApp/Program.cs" Line="43" Column="13" />
+      <File FileName="ConsoleApp/Books.txt" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
