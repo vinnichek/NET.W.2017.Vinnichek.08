@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 namespace Book.Logic
 {
-    public class ComparerMethods 
+    public class ComparerMethods
     {
+        #region Public Methods
+
         /// <summary>
         /// Compare two books by books' ISBN.
         /// </summary>
@@ -124,5 +126,6 @@ namespace Book.Logic
                 return lhs.Price.CompareTo(rhs.Price);
             }
         }
+        #endregion
     }
 }

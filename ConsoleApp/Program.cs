@@ -1,9 +1,10 @@
 ﻿using System;
 using Book.Logic.BookStorage;
-using static Book.Logic.FinderMethods;
 using static Book.Logic.ComparerMethods;
 using Book.Logic;
-namespace ConsoleApp
+using static Book.Logic.Finder.FinderMethods;
+
+namespace ConsoleAppForBook
 {
     class MainClass
     {
@@ -44,7 +45,7 @@ namespace ConsoleApp
             Console.WriteLine("------List of books.------");
             Console.WriteLine(service);
 
-            IBookStorage binaryStorage = new BookBinaryStorage(@"/Users/vinnichek/Projects/Task/ConsoleApp/Books.txt");
+            IBookStorage binaryStorage = new BookBinaryStorage(@"/Users/vinnichek/Projects/Task/ConsoleAppForBook/Books.txt");
             //service.SaveToStorage(binaryStorage);
             //service.LoadFromStorage(binaryStorage);
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Book.Logic.BookStorage;
+using Book.Logic.Finder;
 
 namespace Book.Logic
 {
@@ -35,7 +36,7 @@ namespace Book.Logic
             if (ReferenceEquals(book, null))
                 throw new ArgumentException($"{nameof(book)} is null.");
             if (!bookList.Contains(book))
-                throw new ArgumentException($"{nameof(book)} exists.");
+                throw new ArgumentException($"{nameof(book)} don't exists.");
             bookList.Remove(book);
         }
 

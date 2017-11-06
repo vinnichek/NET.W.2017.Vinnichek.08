@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Logic", "Book.Logic\Book.Logic.csproj", "{11440FE0-682C-43FA-9532-8623E7C5AE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppForBook", "ConsoleApp\ConsoleAppForBook.csproj", "{52CBB514-0A8D-42D9-99D4-60FC0865D591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Logic", "BankAccount.Logic\BankAccount.Logic.csproj", "{C8CA2EAF-B6DD-4544-9CD7-F52EDC4E298A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppForBankAccount", "ConsoleAppForBankAccount\ConsoleAppForBankAccount.csproj", "{E6A9ACE2-5C98-44DA-A435-2562800987A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11440FE0-682C-43FA-9532-8623E7C5AE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11440FE0-682C-43FA-9532-8623E7C5AE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11440FE0-682C-43FA-9532-8623E7C5AE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11440FE0-682C-43FA-9532-8623E7C5AE46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CBB514-0A8D-42D9-99D4-60FC0865D591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CBB514-0A8D-42D9-99D4-60FC0865D591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CBB514-0A8D-42D9-99D4-60FC0865D591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CBB514-0A8D-42D9-99D4-60FC0865D591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CA2EAF-B6DD-4544-9CD7-F52EDC4E298A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CA2EAF-B6DD-4544-9CD7-F52EDC4E298A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CA2EAF-B6DD-4544-9CD7-F52EDC4E298A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CA2EAF-B6DD-4544-9CD7-F52EDC4E298A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A9ACE2-5C98-44DA-A435-2562800987A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A9ACE2-5C98-44DA-A435-2562800987A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A9ACE2-5C98-44DA-A435-2562800987A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A9ACE2-5C98-44DA-A435-2562800987A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

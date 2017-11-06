@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{52CBB514-0A8D-42D9-99D4-60FC0865D591}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Book.Logic/ComparerMethods.cs">
+    <Files>
+      <File FileName="ConsoleAppForBankAccount/Program.cs" Line="26" Column="35" />
+      <File FileName="BankAccount.Logic/BankAccountService.cs" Line="10" Column="50" />
+      <File FileName="BankAccount.Logic/BaseBankAccount.cs" Line="14" Column="27" />
+      <File FileName="BankAccount.Logic/BankAccount.cs" Line="110" Column="99" />
+      <File FileName="BankAccount.Logic/Bonus.cs" Line="4" Column="30" />
+      <File FileName="BankAccount.Logic/BankAccountStorage/BankAccountBinaryStorage.cs" Line="65" Column="21" />
+      <File FileName="Book.Logic/Book.cs" Line="155" Column="70" />
+      <File FileName="ConsoleApp/Books.txt" Line="1" Column="1" />
+      <File FileName="ConsoleApp/Program.cs" Line="20" Column="30" />
+      <File FileName="Book.Logic/BookListService.cs" Line="26" Column="1" />
+      <File FileName="ConsoleAppForBankAccount/BankAccounts.txt" Line="1" Column="1" />
+      <File FileName="Book.Logic/BookStorage/BookBinaryStorage.cs" Line="34" Column="1" />
+      <File FileName="BankAccount.Logic/GoldBankAccount.cs" Line="28" Column="6" />
+      <File FileName="BankAccount.Logic/PlatinumBankAccount.cs" Line="10" Column="1" />
+      <File FileName="Book.Logic/BookStorage/IBookStorage.cs" Line="18" Column="57" />
+      <File FileName="Book.Logic/ComparerMethods.cs" Line="132" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ConsoleAppForBook PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ConsoleAppForBankAccount PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

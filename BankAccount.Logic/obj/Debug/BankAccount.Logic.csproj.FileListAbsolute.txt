@@ -1,0 +1,6 @@
+/Users/vinnichek/Projects/Task/BankAccount.Logic/bin/Debug/BankAccount.Logic.dll
+/Users/vinnichek/Projects/Task/BankAccount.Logic/bin/Debug/BankAccount.Logic.pdb
+/Users/vinnichek/Projects/Task/BankAccount.Logic/obj/Debug/BankAccount.Logic.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Projects/Task/BankAccount.Logic/obj/Debug/BankAccount.Logic.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Projects/Task/BankAccount.Logic/obj/Debug/BankAccount.Logic.dll
+/Users/vinnichek/Projects/Task/BankAccount.Logic/obj/Debug/BankAccount.Logic.pdb

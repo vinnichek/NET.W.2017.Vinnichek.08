@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Book.Logic
+namespace Book.Logic.Finder
 {
     public class FinderMethods
     {

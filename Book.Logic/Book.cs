@@ -6,27 +6,117 @@ namespace Book.Logic
     public class Book : IEquatable<Book>, IComparable, IComparable<Book>
     {
         #region Fields
-        private readonly long bookISBN;
-        private readonly string author;
-        private readonly string title;
-        private readonly string publishingHouse;
-        private readonly int yearOfPublishing;
-        private readonly int numberOfPages;
-        private readonly decimal price;
+        private long bookISBN;
+        private string author;
+        private string title;
+        private string publishingHouse;
+        private int yearOfPublishing;
+        private int numberOfPages;
+        private decimal price;
         #endregion
 
         #region Properties
-        public long BookISBN => bookISBN;
-        public string Author => author;
-        public string Title => title;
-        public string PublishingHouse => publishingHouse;
-        public int YearOfPublishing => yearOfPublishing;
-        public int NumberOfPages => numberOfPages;
-        public decimal Price => price;
+
+        /// <summary>
+        /// ISBN of book.
+        /// </summary>
+        public long BookISBN 
+        {
+            get => bookISBN;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException($"{nameof(value)} is not valid.");
+                bookISBN = value;
+            }
+        }
+
+        /// <summary>
+        /// Author of book.
+        /// </summary>
+        public string Author 
+        {
+            get => author;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException($"{nameof(value)} is null or empty.");
+                author = value;
+            }
+        }
+
+        /// <summary>
+        /// Title of the book.
+        /// </summary>
+        public string Title 
+        {
+            get => title;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException($"{nameof(value)} is null or empty.");
+                title = value;
+            }
+        }
+
+        /// <summary>
+        /// Publishing house of book.
+        /// </summary>
+        public string PublishingHouse 
+        {
+            get => publishingHouse;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException($"{nameof(value)} is null or empty.");
+                publishingHouse = value;
+            }
+        }
+
+        /// <summary>
+        /// Year of publishing of book.
+        /// </summary>
+        public int YearOfPublishing 
+        {
+            get => yearOfPublishing;
+            set
+            {
+                if (value < 1100)
+                    throw new ArgumentException($"{nameof(value)} is not valid.");
+                yearOfPublishing = value;
+            }
+        }
+
+        /// <summary>
+        /// Number of pages of book.
+        /// </summary>
+        public int NumberOfPages 
+        {
+            get => numberOfPages;
+            set
+            {
+                if (value < 4)
+                    throw new ArgumentException($"{nameof(value)} can't be less then 4 pages.");
+                numberOfPages = value;
+            }
+        }
+
+        /// <summary>
+        /// Price of book.
+        /// </summary>
+        public decimal Price 
+        {
+            get => price;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException($"{nameof(value)} can't be less then 0.");
+                price = value;
+            }
+        }
         #endregion
 
         #region Ctors
-
         /// <summary>
         /// Ctor for Book instance.
         /// </summary>
@@ -40,13 +130,13 @@ namespace Book.Logic
         public Book(long bookISBN, string author, string title, string publishingHouse,
                     int yearOfPublishing, int numberOfPages, decimal price)
         {
-            this.bookISBN = bookISBN;
-            this.author = author;
-            this.title = title;
-            this.publishingHouse = publishingHouse;
-            this.yearOfPublishing = yearOfPublishing;
-            this.numberOfPages = numberOfPages;
-            this.price = price;
+            BookISBN = bookISBN;
+            Author = author;
+            Title = title;
+            PublishingHouse = publishingHouse;
+            YearOfPublishing = yearOfPublishing;
+            NumberOfPages = numberOfPages;
+            Price = price;
         }
         #endregion
 

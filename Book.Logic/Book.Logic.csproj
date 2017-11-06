@@ -36,13 +36,14 @@
     </Compile>
     <Compile Include="BookListService.cs" />
     <Compile Include="ComparerMethods.cs" />
-    <Compile Include="FinderMethods.cs" />
-    <Compile Include="IFinder.cs" />
     <Compile Include="BookStorage\BookBinaryStorage.cs" />
     <Compile Include="BookStorage\IBookStorage.cs" />
+    <Compile Include="Finder\FinderMethods.cs" />
+    <Compile Include="Finder\IFinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BookStorage\" />
+    <Folder Include="Finder\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

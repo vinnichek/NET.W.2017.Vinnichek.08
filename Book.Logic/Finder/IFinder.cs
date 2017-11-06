@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Book.Logic
+namespace Book.Logic.Finder
 {
     /// <summary>
     /// Check book by given criteria.

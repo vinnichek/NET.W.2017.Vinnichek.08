@@ -1,6 +1,7 @@
+/Users/vinnichek/Projects/Task/Book.Logic/bin/Debug/Book.cs
 /Users/vinnichek/Projects/Task/Book.Logic/bin/Debug/Book.Logic.dll
 /Users/vinnichek/Projects/Task/Book.Logic/bin/Debug/Book.Logic.pdb
+/Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.csprojResolveAssemblyReference.cache
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.dll
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.pdb
-/Users/vinnichek/Projects/Task/Book.Logic/bin/Debug/Book.cs
