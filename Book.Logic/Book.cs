@@ -157,8 +157,8 @@ namespace Book.Logic
             
             switch (format)
             {
-                case "BA":
-                    return $"{bookISBN}. {author}";
+                case "AT":
+                    return $"{author} - {title}";
                 case "BAT":
                     return $"{bookISBN}. {author} - {title}";
                 case "BATP":
@@ -169,6 +169,8 @@ namespace Book.Logic
                     return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
                 case "BATPYNP":
                     return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
+                case "BATPYNP+":
+                    return $"ISBN: {bookISBN}. Author: {author}. Title: {title}. Publishing house {publishingHouse}. Year of publishing: {yearOfPublishing}. Number of pages {numberOfPages} pages. Price: {price}$";
             }
             throw new FormatException("Unsupported format: " + format);
         }
