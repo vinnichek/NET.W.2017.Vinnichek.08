@@ -3,6 +3,7 @@ using Book.Logic.BookStorage;
 using static Book.Logic.ComparerMethods;
 using Book.Logic;
 using static Book.Logic.Finder.FinderMethods;
+using System.Globalization;
 
 namespace ConsoleAppForBook
 {
@@ -10,18 +11,20 @@ namespace ConsoleAppForBook
     {
         static void Main(string[] args)
         {
-            Book.Logic.Book firstBook = new Book.Logic.Book(12345, "Suzanne Collins", "The Hunger Games", "Scholastic Press",
+            Book.Logic.Book firstBook = new Book.Logic.Book("12345", "Suzanne Collins", "The Hunger Games", "Scholastic Press",
                                      2008, 234, 20);
-            Book.Logic.Book secondBook = new Book.Logic.Book(23456, "J.K. Rowling", "Harry Potter and the Order of the Phoenix", "Scholastic Inc.",
+            Book.Logic.Book secondBook = new Book.Logic.Book("23456", "J.K. Rowling", "Harry Potter and the Order of the Phoenix", "Scholastic Inc.",
                                      2004, 312, 17);
-            Book.Logic.Book thirdBook = new Book.Logic.Book(34567, "Harper Lee", "To Kill a Mockingbird", "Harper Perennial Modern Classics",
+            Book.Logic.Book thirdBook = new Book.Logic.Book("34567", "Harper Lee", "To Kill a Mockingbird", "Harper Perennial Modern Classics",
                                      2006, 245, 21);
-            Book.Logic.Book fourthBook = new Book.Logic.Book(45678, "Jane Austen", "Pride and Prejudice", "Modern Library",
+            Book.Logic.Book fourthBook = new Book.Logic.Book("45678", "Jane Austen", "Pride and Prejudice", "Modern Library",
                                      2000, 634, 18);
-            Book.Logic.Book fifthBook = new Book.Logic.Book(56789, "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
+            Book.Logic.Book fifthBook = new Book.Logic.Book("56789", "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
                                      2006, 134, 25);
-            Book.Logic.Book sixthBook = new Book.Logic.Book(56789, "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
+            Book.Logic.Book sixthBook = new Book.Logic.Book("56789", "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
                                     2006, 134, 25);
+
+            Console.WriteLine(firstBook.ToString("BATPY", null));
 
             Console.WriteLine(fifthBook);
 

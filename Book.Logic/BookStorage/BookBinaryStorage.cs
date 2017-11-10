@@ -9,18 +9,26 @@ namespace Book.Logic.BookStorage
     public class BookBinaryStorage : IBookStorage
     {
         #region Fields
-        private readonly string path;
+        private string path;
+        #endregion
+
+        #region Properties
+        public string Path
+        {
+            get => path;
+            set
+            {
+                CheckPath(value);
+                path = value;
+            }
+        }
         #endregion
 
         #region Ctors
         public BookBinaryStorage(string path)
         {
-            this.path = path;
+            Path = path;
         }
-        #endregion
-
-        #region Properties
-        public string Path => path;
         #endregion
 
         #region Public Methods
@@ -55,8 +63,7 @@ namespace Book.Logic.BookStorage
         public IEnumerable<Book> ReadFromStorage()
         {
             List<Book> bookList = new List<Book>();
-            long bookISBN;
-            string author, title, publishingHouse;
+            string bookISBN, author, title, publishingHouse;
             int yearOfPublishing, numberOfPages;
             decimal price;
 
@@ -64,7 +71,7 @@ namespace Book.Logic.BookStorage
             {
                 while (reader.PeekChar() > -1)
                 {
-                    bookISBN = reader.ReadInt64();
+                    bookISBN = reader.ReadString();
                     author = reader.ReadString();
                     title = reader.ReadString();
                     publishingHouse = reader.ReadString();

@@ -11,16 +11,16 @@ namespace Book.Logic.Finder
         /// <returns>-1, if left book is less; 1, if greater; 0, if they are equal.</returns>
         public class FindBookByBookISBN : IFinder
         {
-            private long bookISBN;
+            private string bookISBN;
 
             /// <summary>
             /// Ctor for FindBookByBookISBN instance.
             /// </summary>
-            /// <param name="ISBN">Book's ISBN.</param>
-            public FindBookByBookISBN(long ISBN)
+            /// <param name="bookISBN">Book's ISBN.</param>
+            public FindBookByBookISBN(string bookISBN)
             {
-                if (ReferenceEquals(bookISBN, null) || (bookISBN == 0))
-                    throw new ArgumentNullException($"{nameof(bookISBN)} is null or empty.");
+                if (ReferenceEquals(bookISBN, null))
+                    throw new ArgumentNullException($"{nameof(bookISBN)} is null.");
                 this.bookISBN = bookISBN;
             }
 
@@ -156,7 +156,9 @@ namespace Book.Logic.Finder
             public FindBookByNumberOfPages(int numberOfPages)
             {
                 if (ReferenceEquals(numberOfPages, null) || (numberOfPages == 0))
+                {
                     throw new ArgumentNullException($"{nameof(numberOfPages)} is null or empty.");
+                }
                 this.numberOfPages = numberOfPages;
             }
 
