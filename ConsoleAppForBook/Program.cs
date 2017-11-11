@@ -24,7 +24,10 @@ namespace ConsoleAppForBook
             Book.Logic.Book sixthBook = new Book.Logic.Book("56789", "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
                                     2006, 134, 25);
 
-            Console.WriteLine(firstBook.ToString("BATPY", null));
+            Console.WriteLine(firstBook.ToString());
+
+            IFormatProvider fp = new BookFormatProvider();
+            Console.WriteLine(string.Format(fp, "{0:AT}", firstBook));
 
             Console.WriteLine(fifthBook);
 
