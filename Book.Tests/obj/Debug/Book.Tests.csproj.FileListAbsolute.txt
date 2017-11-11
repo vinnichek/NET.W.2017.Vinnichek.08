@@ -1,5 +1,3 @@
-/Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.csprojResolveAssemblyReference.cache
-/Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/Book.cs
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/Book.Tests.dll
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/Book.Tests.pdb
@@ -7,5 +5,7 @@
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/nunit.framework.dll
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/Book.Logic.pdb
 /Users/vinnichek/Projects/Task/Book.Tests/bin/Debug/nunit.framework.xml
+/Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.dll
 /Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.pdb

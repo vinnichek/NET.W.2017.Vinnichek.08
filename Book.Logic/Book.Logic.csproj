@@ -40,6 +40,7 @@
     <Compile Include="BookStorage\IBookStorage.cs" />
     <Compile Include="Finder\FinderMethods.cs" />
     <Compile Include="Finder\IFinder.cs" />
+    <Compile Include="BookFormatProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BookStorage\" />

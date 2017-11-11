@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Book.Logic
 {
-    public class Book : IEquatable<Book>, IComparable, IComparable<Book>, IFormattable
+    public class Book : IEquatable<Book>, IComparable, IComparable<Book>
     {
         #region Fields
         private string bookISBN;
@@ -147,32 +147,9 @@ namespace Book.Logic
         /// Return string representation of book.
         /// </summary>
         /// <returns>String representation of book.</returns>
-        public string ToString(string format, IFormatProvider formatProvider) 
+        public override string ToString()
         {
-            if (string.IsNullOrEmpty(format))
-                format = "BATPYNP";
-
-            if (formatProvider == null)
-                formatProvider = CultureInfo.CurrentCulture;
-            
-            switch (format)
-            {
-                case "AT":
-                    return $"{author} - {title}";
-                case "BAT":
-                    return $"{bookISBN}. {author} - {title}";
-                case "BATP":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
-                case "BATPY":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
-                case "BATPYN":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
-                case "BATPYNP":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
-                case "BATPYNP+":
-                    return $"ISBN: {bookISBN}. Author: {author}. Title: {title}. Publishing house {publishingHouse}. Year of publishing: {yearOfPublishing}. Number of pages {numberOfPages} pages. Price: {price}$";
-            }
-            throw new FormatException("Unsupported format: " + format);
+            return $"{ bookISBN}. { author} - { title}, { publishingHouse}, { yearOfPublishing}, { numberOfPages} pages, { price}$";
         }
 
         /// <summary>
