@@ -9,3 +9,14 @@
 /Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.dll
 /Users/vinnichek/Projects/Task/Book.Tests/obj/Debug/Book.Tests.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/Book.cs
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/Book.Tests.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/Book.Tests.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/Book.Logic.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/nunit.framework.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/Book.Logic.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/bin/Debug/nunit.framework.xml
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/obj/Debug/Book.Tests.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/obj/Debug/Book.Tests.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/obj/Debug/Book.Tests.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Tests/obj/Debug/Book.Tests.pdb

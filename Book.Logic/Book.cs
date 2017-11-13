@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Book.Logic
 {
-    public class Book : IEquatable<Book>, IComparable, IComparable<Book>
+    public class Book : IEquatable<Book>, IComparable, IComparable<Book>, IFormattable
     {
         #region Fields
         private string bookISBN;
@@ -147,9 +147,31 @@ namespace Book.Logic
         /// Return string representation of book.
         /// </summary>
         /// <returns>String representation of book.</returns>
-        public override string ToString()
+        public string ToString(string format, IFormatProvider provider)
         {
-            return $"{ bookISBN}. { author} - { title}, { publishingHouse}, { yearOfPublishing}, { numberOfPages} pages, { price}$";
+            if (String.IsNullOrEmpty(format))
+                format = "BATPYNP";
+
+            if (provider == null)
+                provider = CultureInfo.CurrentCulture;
+
+            switch (format.ToUpperInvariant())
+            {
+                case ("BATPYNP"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
+                case ("BATPYN"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
+                case ("BATPY"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
+                case ("BATP"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
+                case ("AT"):
+                    return $"{author} - {title}";
+                case ("BAT"):
+                    return $"{bookISBN}. {author} - {title}";
+            }
+
+            throw new FormatException("Unsupported format: " + format);
         }
 
         /// <summary>

@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Book.Logic
 {
-    public class Book : IEquatable<Book>, IComparable, IComparable<Book>
+    public class Book : IEquatable<Book>, IComparable, IComparable<Book>, IFormattable
     {
         #region Fields
         private string bookISBN;
@@ -147,33 +147,32 @@ namespace Book.Logic
         /// Return string representation of book.
         /// </summary>
         /// <returns>String representation of book.</returns>
-        /*public string ToString(string format, IFormatProvider formatProvider) 
+        public string ToString(string format, IFormatProvider provider)
         {
-            if (string.IsNullOrEmpty(format))
+            if (String.IsNullOrEmpty(format))
                 format = "BATPYNP";
 
-            if (formatProvider == null)
-                formatProvider = CultureInfo.CurrentCulture;
-            
+            if (provider == null)
+                provider = CultureInfo.CurrentCulture;
+
             switch (format.ToUpperInvariant())
             {
-                case "AT":
-                    return $"{author} - {title}";
-                case "BAT":
-                    return $"{bookISBN}. {author} - {title}";
-                case "BATP":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
-                case "BATPY":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
-                case "BATPYN":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
-                case "BATPYNP":
+                case ("BATPYNP"):
                     return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
-                case "BATPYNP+":
-                    return $"ISBN: {bookISBN}. Author: {author}. Title: {title}. Publishing house: {publishingHouse}. Year of publishing: {yearOfPublishing}. Number of pages {numberOfPages} pages. Price: {price}$";
+                case ("BATPYN"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
+                case ("BATPY"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
+                case ("BATP"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
+                case ("AT"):
+                    return $"{author} - {title}";
+                case ("BAT"):
+                    return $"{bookISBN}. {author} - {title}";
             }
+
             throw new FormatException("Unsupported format: " + format);
-        }*/
+        }
 
         /// <summary>
         /// Compare two books.
@@ -187,15 +186,6 @@ namespace Book.Logic
                        this.title == other.title && this.publishingHouse == other.publishingHouse &&
                        this.yearOfPublishing == other.yearOfPublishing &&
                        this.numberOfPages == other.numberOfPages && this.price == other.price;
-        }
-
-        /// <summary>
-        /// Return string representation of book.
-        /// </summary>
-        /// <returns>String representation of book.</returns>
-        public override string ToString()
-        {
-            return $"{ bookISBN}. { author} - { title}, { publishingHouse}, { yearOfPublishing}, { numberOfPages} pages, { price}$";
         }
 
         /// <summary>

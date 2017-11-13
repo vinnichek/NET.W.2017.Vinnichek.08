@@ -4,3 +4,9 @@
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.dll
 /Users/vinnichek/Projects/Task/Book.Logic/obj/Debug/Book.Logic.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/bin/Debug/Book.cs
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/bin/Debug/Book.Logic.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/bin/Debug/Book.Logic.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.pdb
