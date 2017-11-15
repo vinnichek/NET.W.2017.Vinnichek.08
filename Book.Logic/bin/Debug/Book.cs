@@ -147,6 +147,15 @@ namespace Book.Logic
         /// Return string representation of book.
         /// </summary>
         /// <returns>String representation of book.</returns>
+        public override string ToString()
+        {
+            return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
+        }
+
+        /// <summary>
+        /// Return string representation of book.
+        /// </summary>
+        /// <returns>String representation of book.</returns>
         public string ToString(string format, IFormatProvider provider)
         {
             if (String.IsNullOrEmpty(format))

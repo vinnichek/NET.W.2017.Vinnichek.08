@@ -7,3 +7,26 @@
 /Users/vinnichek/Projects/Task/ConsoleApp/obj/Debug/ConsoleAppForBook.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task/ConsoleApp/obj/Debug/ConsoleApp.exe
 /Users/vinnichek/Projects/Task/ConsoleApp/obj/Debug/ConsoleApp.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/Book.cs
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/ConsoleAppForBook.exe
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/ConsoleAppForBook.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/Book.Logic.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/Book.Logic.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/obj/Debug/ConsoleAppForBook.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/obj/Debug/ConsoleAppForBook.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/obj/Debug/ConsoleAppForBook.exe
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/obj/Debug/ConsoleAppForBook.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/NLog.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/ConsoleAppForBook/bin/Debug/NLog.xml
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\Book.cs
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\ConsoleAppForBook.exe
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\ConsoleAppForBook.pdb
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\Book.Logic.dll
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\NLog.dll
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\Book.Logic.pdb
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\NLog.xml
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\obj\Debug\ConsoleAppForBook.csprojResolveAssemblyReference.cache
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\obj\Debug\ConsoleAppForBook.csproj.CoreCompileInputs.cache
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\obj\Debug\ConsoleAppForBook.exe
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\obj\Debug\ConsoleAppForBook.pdb
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\bin\Debug\NLog.config

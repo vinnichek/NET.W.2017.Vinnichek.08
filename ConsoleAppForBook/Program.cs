@@ -3,7 +3,7 @@ using Book.Logic.BookStorage;
 using static Book.Logic.ComparerMethods;
 using Book.Logic;
 using static Book.Logic.Finder.FinderMethods;
-using System.Globalization;
+using Book.Logic.Logging;
 
 namespace ConsoleAppForBook
 {
@@ -11,6 +11,10 @@ namespace ConsoleAppForBook
     {
         static void Main(string[] args)
         {
+            ILogger logger = new Book.Logic.Logging.NLog();
+
+        try {
+
             Book.Logic.Book firstBook = new Book.Logic.Book("12345", "Suzanne Collins", "The Hunger Games", "Scholastic Press",
                                      2008, 234, 20);
             Book.Logic.Book secondBook = new Book.Logic.Book("23456", "J.K. Rowling", "Harry Potter and the Order of the Phoenix", "Scholastic Inc.",
@@ -23,12 +27,12 @@ namespace ConsoleAppForBook
                                      2006, 134, 25);
             Book.Logic.Book sixthBook = new Book.Logic.Book("56789", "Stephenie Meyer", "Twilight", "Little, Brown and Company ",
                                     2006, 134, 25);
-
-            Console.WriteLine(firstBook.ToString());
+            Book.Logic.Book seventhBook = null;
+                
 
             IFormatProvider fp = new BookFormatProvider();
             Console.WriteLine(string.Format(fp, "{0:AT}", firstBook));
-
+            
             Console.WriteLine(fifthBook);
 
             Console.WriteLine(fifthBook.Equals(sixthBook)); //true
@@ -38,19 +42,21 @@ namespace ConsoleAppForBook
             Console.WriteLine(sixthBook.CompareTo(fifthBook)); //0
 
             BookListService service = new BookListService();
+              
             service.AddBook(firstBook);
             service.AddBook(secondBook);
             service.AddBook(thirdBook);
-            //service.AddBook(thirdBook); //exeption
             service.RemoveBook(thirdBook);
             service.AddBook(thirdBook);
             service.AddBook(fourthBook);
             service.AddBook(fifthBook);
+                service.AddBook(seventhBook);
+
 
             Console.WriteLine("\r\n");
             Console.WriteLine("------List of books.------");
             Console.WriteLine(service);
-
+            
             IBookStorage binaryStorage = new BookBinaryStorage(@"/Users/vinnichek/Projects/Task/ConsoleAppForBook/Books.txt");
             //service.SaveToStorage(binaryStorage);
             //service.LoadFromStorage(binaryStorage);
@@ -66,7 +72,21 @@ namespace ConsoleAppForBook
             Console.WriteLine("\r\n");
             Console.WriteLine("------Sorting by price.------");
             service.SortBookByTag(new CompareByPrice());
-            Console.WriteLine(service);
+            Console.WriteLine(service);     
+        }
+            catch (ArgumentNullException e)
+            {
+                logger.ErrorWriteToLog(DateTime.Now, e.Message, e.StackTrace);
+            }
+            catch (ArgumentException e)
+            {
+                logger.ErrorWriteToLog(DateTime.Now, e.Message, e.StackTrace);
+            }
+            catch (Exception e)
+            {
+                logger.ErrorWriteToLog(DateTime.Now, "Unhandled exception:", e.StackTrace);
+            }
+            Console.ReadKey();
         }
     }
 }

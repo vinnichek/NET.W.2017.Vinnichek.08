@@ -10,3 +10,16 @@
 /Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.dll
 /Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.pdb
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/obj/Debug/Book.Logic.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/bin/Debug/NLog.dll
+/Users/vinnichek/Downloads/NET.W.2017.Vinnichek.08-master/Book.Logic/bin/Debug/NLog.xml
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\Book.cs
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\Book.Logic.dll
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\Book.Logic.pdb
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\NLog.dll
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\NLog.xml
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\obj\Debug\Book.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\obj\Debug\Book.Logic.csproj.CoreCompileInputs.cache
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\obj\Debug\Book.Logic.dll
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\obj\Debug\Book.Logic.pdb
+C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\bin\Debug\NLog.config

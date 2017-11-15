@@ -147,29 +147,39 @@ namespace Book.Logic
         /// Return string representation of book.
         /// </summary>
         /// <returns>String representation of book.</returns>
-        public string ToString(string format, IFormatProvider formatProvider) 
+        public override string ToString()
         {
-            if (string.IsNullOrEmpty(format))
+            return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
+        }
+
+        /// <summary>
+        /// Return string representation of book.
+        /// </summary>
+        /// <returns>String representation of book.</returns>
+        public string ToString(string format, IFormatProvider provider)
+        {
+            if (String.IsNullOrEmpty(format))
                 format = "BATPYNP";
 
-            if (formatProvider == null)
-                formatProvider = CultureInfo.CurrentCulture;
-            
-            switch (format)
+            if (provider == null)
+                provider = CultureInfo.CurrentCulture;
+
+            switch (format.ToUpperInvariant())
             {
-                case "BA":
-                    return $"{bookISBN}. {author}";
-                case "BAT":
-                    return $"{bookISBN}. {author} - {title}";
-                case "BATP":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
-                case "BATPY":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
-                case "BATPYN":
-                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
-                case "BATPYNP":
+                case ("BATPYNP"):
                     return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages, {price}$";
+                case ("BATPYN"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}, {numberOfPages} pages";
+                case ("BATPY"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}, {yearOfPublishing}";
+                case ("BATP"):
+                    return $"{bookISBN}. {author} - {title}, {publishingHouse}";
+                case ("AT"):
+                    return $"{author} - {title}";
+                case ("BAT"):
+                    return $"{bookISBN}. {author} - {title}";
             }
+
             throw new FormatException("Unsupported format: " + format);
         }
 

@@ -1,0 +1,8 @@
+MainClass.Main => NLog.ErrorWriteToLog 15.11.2017 16:30:26
+MainClass.Main => NLog.ErrorWriteToLog book is null.
+MainClass.Main => NLog.ErrorWriteToLog    в Book.Logic.BookListService.AddBook(Book book) в C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\BookListService.cs:строка 24
+   в ConsoleAppForBook.MainClass.Main(String[] args) в C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\Program.cs:строка 53
+MainClass.Main => NLog.ErrorWriteToLog 15.11.2017 16:31:56
+MainClass.Main => NLog.ErrorWriteToLog book is null.
+MainClass.Main => NLog.ErrorWriteToLog    в Book.Logic.BookListService.AddBook(Book book) в C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\Book.Logic\BookListService.cs:строка 24
+   в ConsoleAppForBook.MainClass.Main(String[] args) в C:\Users\Ira Vinnichek\Desktop\NET.W.2017.Vinnichek.08-master\ConsoleAppForBook\Program.cs:строка 53
